@@ -1,72 +1,98 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="./resources/ol.css">
-        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
-        <link rel="stylesheet" type="text/css" href="resources/horsey.min.css">
-        <link rel="stylesheet" type="text/css" href="resources/ol3-search-layer.min.css">
-        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
-        <link rel="stylesheet" href="./resources/qgis2web.css">
-        <style>
-        html, body {
-            background-color: #ffffff;
-        }
-        .ol-control > * {
-            background-color: #f8f8f8!important;
-            color: #444444!important;
-            border-radius: 0px;
-        }
-        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
-            color: #444444!important;
-        }
-        .search-layer-input-search {
-            background-color: #f8f8f8!important;
-        }
-        .ol-control > *:focus, .ol-control >*:hover {
-            background-color: rgba(248, 248, 248, 0.7)!important;
-        } 
-        .ol-control {
-            background-color: rgba(255,255,255,.4) !important;
-            padding: 2px !important;
-        } 
-        </style>
 
-        <style>
-        html, body, #map {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
-        }
-        </style>
-        <title>Peta WS Bengawan Solo</title>
-    </head>
-    <body>
-        <div id="map">
-            <div id="popup" class="ol-popup">
-                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-                <div id="popup-content"></div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="./resources/ol.css">
+    <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/horsey.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/ol3-search-layer.min.css">
+    <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+    <link rel="stylesheet" href="./resources/qgis2web.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="./images/iconPU.ico">
+
+    <title>Peta WS Bengawan Solo</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#" class="logos">
+                    <img src="./images/Logo.jpg" alt="logo" width="22px" height="22px">
+                    Peta WS Bengawan Solo
+                </a>
             </div>
+            <ul class="menu">
+                <li><a href="https://bit.ly/akisdabengawansolo" target="_blank">AKISDA</a></li>
+                <li><a href="https://bit.ly/sibensol" target="_blank">SIBENSOL</a></li>
+                <li><a href="https://hidrologi.bbws-bsolo.net/" target="_blank">Hidrologi</a></li>
+                <li><a href="https://upb-bengawansolo.id/" target="_blank">Bendungan</a></li>
+                <li><a href="https://wa.me/6281353000600" target="_blank">Kontak</a></li>
+            </ul>
         </div>
-        <script src="resources/qgis2web_expressions.js"></script>
-        <script src="resources/polyfills.js"></script>
-        <script src="./resources/functions.js"></script>
-        <script src="./resources/ol.js"></script>
-        <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
-        <script src="resources/horsey.min.js"></script>
-        <script src="resources/ol3-search-layer.js"></script>
-        <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="resources/ol-geocoder.js"></script>
-        <script src="layers/LabelDAS_2.js"></script><script src="layers/LabelKabupaten_3.js"></script><script src="layers/OrdeSungai_4.js"></script><script src="layers/TanggulSungai_5.js"></script><script src="layers/BendungGerak_6.js"></script><script src="layers/Bendungan_7.js"></script><script src="layers/WorkshopAlatBerat_8.js"></script><script src="layers/RumahPompa_9.js"></script><script src="layers/PoskoBencana_10.js"></script><script src="layers/PintuAir_11.js"></script><script src="layers/LokasiRawanBanjir_12.js"></script><script src="layers/PosDugaAir_13.js"></script><script src="layers/PosCurahHujan_14.js"></script><script src="layers/PosKlimatologi_15.js"></script><script src="layers/BatasWSBengawanSolo_16.js"></script><script src="layers/BatasKabupaten_17.js"></script><script src="layers/BatasProvinsi_18.js"></script>
-        <script src="styles/LabelDAS_2_style.js"></script><script src="styles/LabelKabupaten_3_style.js"></script><script src="styles/OrdeSungai_4_style.js"></script><script src="styles/TanggulSungai_5_style.js"></script><script src="styles/BendungGerak_6_style.js"></script><script src="styles/Bendungan_7_style.js"></script><script src="styles/WorkshopAlatBerat_8_style.js"></script><script src="styles/RumahPompa_9_style.js"></script><script src="styles/PoskoBencana_10_style.js"></script><script src="styles/PintuAir_11_style.js"></script><script src="styles/LokasiRawanBanjir_12_style.js"></script><script src="styles/PosDugaAir_13_style.js"></script><script src="styles/PosCurahHujan_14_style.js"></script><script src="styles/PosKlimatologi_15_style.js"></script><script src="styles/BatasWSBengawanSolo_16_style.js"></script><script src="styles/BatasKabupaten_17_style.js"></script><script src="styles/BatasProvinsi_18_style.js"></script>
-        <script src="./layers/layers.js" type="text/javascript"></script> 
-        <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>
-    </body>
+    </nav>
+
+
+    <div id="map">
+        <div id="popup" class="ol-popup">
+            <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+            <div id="popup-content"></div>
+        </div>
+    </div>
+    <script src="resources/qgis2web_expressions.js"></script>
+    <script src="resources/polyfills.js"></script>
+    <script src="./resources/functions.js"></script>
+    <script src="./resources/ol.js"></script>
+    <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
+    <script src="resources/horsey.min.js"></script>
+    <script src="resources/ol3-search-layer.js"></script>
+    <script src="./resources/ol-layerswitcher.js"></script>
+    <script src="resources/ol-geocoder.js"></script>
+    <script src="layers/LabelDAS_2.js"></script>
+    <script src="layers/LabelKabupaten_3.js"></script>
+    <script src="layers/OrdeSungai_4.js"></script>
+    <script src="layers/TanggulSungai_5.js"></script>
+    <script src="layers/BendungGerak_6.js"></script>
+    <script src="layers/Bendungan_7.js"></script>
+    <script src="layers/WorkshopAlatBerat_8.js"></script>
+    <script src="layers/RumahPompa_9.js"></script>
+    <script src="layers/PoskoBencana_10.js"></script>
+    <script src="layers/PintuAir_11.js"></script>
+    <script src="layers/LokasiRawanBanjir_12.js"></script>
+    <script src="layers/PosDugaAir_13.js"></script>
+    <script src="layers/PosCurahHujan_14.js"></script>
+    <script src="layers/PosKlimatologi_15.js"></script>
+    <script src="layers/BatasWSBengawanSolo_16.js"></script>
+    <script src="layers/BatasKabupaten_17.js"></script>
+    <script src="layers/BatasProvinsi_18.js"></script>
+    <script src="styles/LabelDAS_2_style.js"></script>
+    <script src="styles/LabelKabupaten_3_style.js"></script>
+    <script src="styles/OrdeSungai_4_style.js"></script>
+    <script src="styles/TanggulSungai_5_style.js"></script>
+    <script src="styles/BendungGerak_6_style.js"></script>
+    <script src="styles/Bendungan_7_style.js"></script>
+    <script src="styles/WorkshopAlatBerat_8_style.js"></script>
+    <script src="styles/RumahPompa_9_style.js"></script>
+    <script src="styles/PoskoBencana_10_style.js"></script>
+    <script src="styles/PintuAir_11_style.js"></script>
+    <script src="styles/LokasiRawanBanjir_12_style.js"></script>
+    <script src="styles/PosDugaAir_13_style.js"></script>
+    <script src="styles/PosCurahHujan_14_style.js"></script>
+    <script src="styles/PosKlimatologi_15_style.js"></script>
+    <script src="styles/BatasWSBengawanSolo_16_style.js"></script>
+    <script src="styles/BatasKabupaten_17_style.js"></script>
+    <script src="styles/BatasProvinsi_18_style.js"></script>
+    <script src="./layers/layers.js" type="text/javascript"></script>
+    <script src="./resources/Autolinker.min.js"></script>
+    <script src="./resources/qgis2web.js"></script>
+</body>
+
 </html>
