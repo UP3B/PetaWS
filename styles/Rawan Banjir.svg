@@ -1,16 +1,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg fill="#000000" width="64px" height="64px" viewBox="-5.12 -5.12 42.24 42.24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.9279999999999999">
-
-<g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(1.5999999999999996,1.5999999999999996), scale(0.9)">
-
-<rect x="-5.12" y="-5.12" width="42.24" height="42.24" rx="0" fill="#fff700" strokewidth="0"/>
-
-</g>
-
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.064"/>
-
-<g id="SVGRepo_iconCarrier"> <defs> <style> .cls-1 { fill: none; } </style> </defs> <path d="M29,28a2.8828,2.8828,0,0,1-1-.1816v-.0059a3.7662,3.7662,0,0,1-2.0532-2.1338A.971.971,0,0,0,25,25a1.007,1.007,0,0,0-.9487.6836A3.4376,3.4376,0,0,1,21,28a3.44,3.44,0,0,1-3.0532-2.3213A.9894.9894,0,0,0,17,25a1.007,1.007,0,0,0-.9487.6836A3.4376,3.4376,0,0,1,13,28a3.44,3.44,0,0,1-3.0532-2.3213,1,1,0,0,0-1.8955.0049A3.4376,3.4376,0,0,1,5,28H2v2H5a4.9316,4.9316,0,0,0,4-1.9873,5.0192,5.0192,0,0,0,8,0,5.0192,5.0192,0,0,0,8,0,5.1433,5.1433,0,0,0,2.1379,1.62A4.8374,4.8374,0,0,0,29,30h1V28Z" transform="translate(0 0)"/> <path id="_inner-path_" data-name="&lt;inner-path&gt;" class="cls-1" d="M23.75,11h-1.5V7h1.5ZM23,12a1,1,0,1,0,1,1A1,1,0,0,0,23,12Z" transform="translate(0 0)"/> <path d="M29.9115,14.9355,23.6284,3.3706a.7181.7181,0,0,0-1.2568,0L16.0885,14.9355A.72.72,0,0,0,16.72,16H29.28A.72.72,0,0,0,29.9115,14.9355ZM22.25,7h1.5v4h-1.5ZM23,14a1,1,0,1,1,1-1A1,1,0,0,1,23,14Z" transform="translate(0 0)"/> <path d="M28,21V18H26v3H25a3.4376,3.4376,0,0,1-3.0513-2.3164,1,1,0,0,0-1.8955-.0049A3.44,3.44,0,0,1,17,21a3.4376,3.4376,0,0,1-3.0513-2.3164A1.007,1.007,0,0,0,13,18a.9894.9894,0,0,0-.9468.6787A3.44,3.44,0,0,1,9,21a3.3663,3.3663,0,0,1-3-2.1855v-6.753l10-7.79,2.5327,1.9756.9682-1.7818L16.6123,2.2139a1.0094,1.0094,0,0,0-1.2427,0L1,13.4194l1.2427,1.5718L4,13.6211v5.1875a3.6892,3.6892,0,0,1-2,2.0039V22.896a4.9958,4.9958,0,0,0,3-1.8833,5.0192,5.0192,0,0,0,8,0,5.0192,5.0192,0,0,0,8,0A4.9316,4.9316,0,0,0,25,23h5V21Z" transform="translate(0 0)"/> <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/> </g>
-
-</svg>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <path d="M5.9 62c-3.3 0-4.8-2.4-3.3-5.3L29.3 4.2c1.5-2.9 3.9-2.9 5.4 0l26.7 52.5c1.5 2.9 0 5.3-3.3 5.3H5.9z" fill="#ffce31"> </path> <g fill="#231f20"> <path d="M27.8 23.6l2.8 18.5c.3 1.8 2.6 1.8 2.9 0l2.7-18.5c.5-7.2-8.9-7.2-8.4 0"> </path> <circle cx="32" cy="49.6" r="4.2"> </circle> </g> </g>
+</svg>
